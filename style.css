@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+.menu {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+.slot-machine {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  overflow: hidden;
+  height: 300px;
+  width: 600px;
+  background-color: #000000;
+  border-radius: 10px;
+  position: relative;
+}
+
+.slot-column {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  overflow: hidden;
+  height: 300px;
+  position: relative;
+}
+
+.slot {
+  font-size: 3rem;
+  margin: 5px 0;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+}
+
+#spinButton,
+#menuButton {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: green;
+}
+
+.spin {
+  animation: spin 1s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-300px);
+  } /* 3 slots * 100px each */
+}

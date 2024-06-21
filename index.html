@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Cocktail Slot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button id="menuButton">Menu</button>
+    <div class="menu" id="menu" style="display: none;">
+        <button id="increaseBet">Increase Bet by 10</button>
+        <button id="decreaseBet">Decrease Bet by 10</button>
+        <button id="maxBet">Max Bet (50% of Balance)</button>
+        <button id="setMinBet">Set Min Bet</button>
+    </div>
+    <div class="container">
+        <h1>Fruit Cocktail Slot</h1>
+        <div class="controls">
+            <div>Balance: <span id="balance">1000</span> coins</div>
+            <div>Bet: <span id="bet">10</span> coins</div>
+        </div>
+        <div class="slot-machine">
+            <div class="slot-column" id="column1"></div>
+            <div class="slot-column" id="column2"></div>
+            <div class="slot-column" id="column3"></div>
+        </div>
+        <button id="spinButton">Spin</button>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
