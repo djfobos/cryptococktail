@@ -161,15 +161,10 @@ document.addEventListener('DOMContentLoaded', function() {
     updateBet();
 });
 
-function handleTelegramLogin() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const user_id = urlParams.get('id');
-    const first_name = urlParams.get('first_name');
-    const last_name = urlParams.get('last_name');
-    const username = urlParams.get('username');
-    
-    console.log('User ID:', user_id);
-    console.log('First Name:', first_name);
-    console.log('Last Name:', last_name);
-    console.log('Username:', username);
+// Function to handle Telegram Login
+function onTelegramAuth(user) {
+    console.log('User ID:', user.id);
+    console.log('First Name:', user.first_name);
+    console.log('Last Name:', user.last_name);
+    console.log('Username:', user.username);
 }
