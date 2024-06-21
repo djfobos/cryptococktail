@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuButton = document.getElementById('menuButton');
     const menu = document.getElementById('menu');
 
-    let balance = 1000;
-    let bet = 10;
-    const minBet = 10;
+    let balance = 100000;
+    let bet = 100;
+    const minBet = 100;
 
     const payoutTable = {
         '🍓': 10,
@@ -125,13 +125,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     increaseBetButton.addEventListener('click', () => {
-        bet += 10;
+        bet += 100;
         updateBet();
     });
 
     decreaseBetButton.addEventListener('click', () => {
         if (bet > minBet) {
-            bet -= 10;
+            bet -= 100;
             updateBet();
         }
     });
