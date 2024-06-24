@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
     } 
     else 
     {
+        console.log(initDataUnsafe.user);
+        
         TG_ID = initDataUnsafe.user.id;
         tgid.innerText = TG_ID
     }
